@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="card col-sm-6">
+            <!-- add user component later-->
+            <app-user [routerLink]="user.id" *ngFor="let user of users" [user]='user'></app-user>
+        </div>
+        <div class="col-sm-6">
+            <router-outlet></router-outlet>
+        </div>
+        <button btn btn-primary></button>
+    </div>
+</div>
